@@ -14,11 +14,24 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  max-width: 815px;
 }
 
 #header {
   background: rgb(0, 0, 0);
+  font-family: AR Blanca;
   color: white;
+}
+
+header h1 {
+  font-size: 80px;
+}
+
+header h3 {
+  font-size: 25px;
+  font-style: italic;
+  text-align: left;
+  margin-top: -70px;
 }
 
 /* Navigation */
@@ -27,8 +40,6 @@ nav {
   position: fixed;
   color: white;
   font-size: 1.2em;
-  display: none;
-  font-style: AR Blanca;
 }
 
 nav ul {
