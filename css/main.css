@@ -12,15 +12,18 @@ body {
 
 #header img {
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  max-width: 815px;
+  background-size: auto;
+  height: auto;
+  max-height: 70%;
+  max-width: 70%;
+  top: 0;
 }
 
 #header {
   background: rgb(0, 0, 0);
   font-family: AR Blanca;
   color: white;
+  bottom
 }
 
 header h1 {
@@ -35,68 +38,82 @@ header h3 {
 }
 
 /* Navigation */
-
 nav {
-  position: fixed;
   color: white;
-  font-size: 1.2em;
 }
 
-nav ul {
-  list-style-type: none;
+#fixed_top_scroll, #fixed_top_scroll ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  white-space: nowrap;
   display: flex;
+}
+
+#fixed_top_scroll {
+  font-family: arial;
+  font-size: 12px;
+}
+
+#fixed_top_scroll a {
+  display: block;
+  padding: 0;
   background: rgba(255, 17, 1, .4);
   background: -o-linear-gradient(bottom, rgba(255, 17, 1, 1), rgba(243, 214, 23));
   background: -webkit-linear-gradient(bottom, rgba(255, 17, 1, 1), rgba(243, 214, 23, .8));
   background: -moz-linear-gradient(bottom, rgba(255, 17, 1, 1), rgba(243, 214, 23, .8));
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-nav a {
-  padding-bottom: 3px;
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+  width: 144px;
 }
 
-nav a:hover {
-  border-bottom: 3px solid rgb(255, 255, 255);
+#fixed_top_scroll li {
+  float: left;
+  border-right: 1px solid white;
 }
 
-#fixed_top_scroll {
-  position: fixed;
-  padding: 7px;
-  margin: 0auto;
+/*parce que IE ne reconnaît pas le sélecteur supérieur*/
+html<body #fixed_top_scroll li {
+  border-right: 1px solid transparent;  
 }
 
-#no_display_scroll {
-  border-radius: 5px;
-  padding-top: 2px;
-  background: none;
-}
-
-#sub_menu {
+#fixed_top_scroll li ul {
+  position: absolute;
+  width: 144px;
   display: none;
 }
 
-#logo img {
-  margin-left: 10px;
-  border-radius: 5px;
+#fixed_top_scroll li ul li {
+  border-top: 1px solid white;
 }
 
-#logo img:hover {
-  border-bottom: 1px solid rgb(255, 255, 255);
+html<body #fixed_top_scroll li ul li {
+  border-top: 1px solid transparent;
 }
 
+#fixed_top_scroll li ul ul {
+  margin: -22px 0 0 144px;
+  border-left: 1px solid white;
+}
+
+#fixed_top_scroll li:hover ul{
+  position: relative;
+  top: 0;
+  /*left: -25px;*/
+  display: block;
+  color: orange;
+}
 
 /*section*/
 
 section {
   margin-top: 105px;
+  display: none;
 }
-
 
 /* article */
 
@@ -130,7 +147,6 @@ p {
   opacity: 1;
 }
 
-
 /*aside*/
 
 aside {
@@ -160,7 +176,6 @@ aside li {
 aside img {
   padding: 5px;
 }
-
 
 /*footer*/
 
