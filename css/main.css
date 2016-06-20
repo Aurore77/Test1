@@ -1,32 +1,20 @@
 /*page*/
 
 body {
-
   background: rgba(0, 0, 0, 1);
-  color: rgb(0, 0, 0);
-  margin: 30px;
 }
-
 
 /*header*/
 
-#header img {
-  background-repeat: no-repeat;
-  background-size: auto;
-  height: auto;
-  max-height: 70%;
-  max-width: 70%;
-  top: 0;
+/*header {
+  box-shadow: none;
+}*/
+
+#lion {
+  margin-top: 60px;
 }
 
-#header {
-  background: rgb(0, 0, 0);
-  font-family: AR Blanca;
-  color: white;
-  bottom
-}
-
-header h1 {
+/*header h1 {
   font-size: 80px;
 }
 
@@ -35,45 +23,49 @@ header h3 {
   font-style: italic;
   text-align: left;
   margin-top: -70px;
-}
+  text-indent: 80px;
+}*/
 
 /* Navigation */
 nav {
   color: white;
+  position: fixed;
+  z-index: 2;
+}
+
+/*fixed_top_scroll*/
+
+#fixed_top_scroll {
+  font-family: arial;
+  font-size: 15px;
 }
 
 #fixed_top_scroll, #fixed_top_scroll ul {
+  display: inline;
   list-style: none;
   padding: 0;
   margin: 0;
   height: 30px;
-  line-height: 30px;
+  line-height: 60px;
   text-align: center;
   color: white;
   white-space: nowrap;
-  display: flex;
-}
-
-#fixed_top_scroll {
-  font-family: arial;
-  font-size: 12px;
-}
-
-#fixed_top_scroll a {
-  display: block;
-  padding: 0;
-  background: rgba(255, 17, 1, .4);
-  background: -o-linear-gradient(bottom, rgba(255, 17, 1, 1), rgba(243, 214, 23));
-  background: -webkit-linear-gradient(bottom, rgba(255, 17, 1, 1), rgba(243, 214, 23, .8));
-  background: -moz-linear-gradient(bottom, rgba(255, 17, 1, 1), rgba(243, 214, 23, .8));
-  color: white;
-  text-decoration: none;
-  width: 144px;
 }
 
 #fixed_top_scroll li {
+  background: black;
+  background: -o-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
   float: left;
   border-right: 1px solid white;
+  padding: 0;
+  width: 15em;
+}
+
+#fixed_top_scroll a {
+  color: white;
+  text-decoration: none; 
 }
 
 /*parce que IE ne reconnaît pas le sélecteur supérieur*/
@@ -82,9 +74,9 @@ html<body #fixed_top_scroll li {
 }
 
 #fixed_top_scroll li ul {
-  position: absolute;
-  width: 144px;
   display: none;
+  position: absolute;
+  /*width: 144px;*/
 }
 
 #fixed_top_scroll li ul li {
@@ -101,18 +93,29 @@ html<body #fixed_top_scroll li ul li {
 }
 
 #fixed_top_scroll li:hover ul{
+  display: block;
   position: relative;
   top: 0;
   /*left: -25px;*/
-  display: block;
-  color: orange;
+}
+
+#fixed_top_scroll a:hover {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+#fixed_top_scroll li:hover {
+  background: highlight;
+}
+
+#no_display_scroll a {
+  background: none;
 }
 
 /*section*/
 
 section {
-  margin-top: 105px;
-  display: none;
+  margin: 15px 30px 0px 30px;
+  box-shadow: 0px 4px 10px rgb(48,48,48);
 }
 
 /* article */
@@ -121,22 +124,40 @@ article {
   float: left;
   position: relative;
   background: rgba(255, 255, 255, .95);
-  width: 70%;
-  max-width: 550px;
-  box-shadow: 0px 4px 10px grey;
   border-radius: 12px;
-  padding: 10px, 5px, 10px, 5px;
+  padding: 15px 20px 15px 20px;
   text-align: justify;
   margin: 0px auto;
+  max-width: 70%;
 }
 
-div {
-  background: rgba(255, 17, 1, .4);
+.performance_description {
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background: rgba(255, 17, 1, .4);
   background: -o-linear-gradient(bottom, rgba(255, 17, 1, 1), rgba(243, 214, 23));
   background: -webkit-linear-gradient(bottom, rgba(255, 17, 1, 1), rgba(243, 214, 23, .8));
-  background: -moz-linear-gradient(bottom, rgba(255, 17, 1, 1), rgba(243, 214, 23, .8));
-  max-width: 90%;
-  margin: 0px auto;
+  background: -moz-linear-gradient(bottom, rgba(255, 17, 1, 1), rgba(243, 214, 23, .8));*/
+  padding-top: 130px;
+  color: white;
+  box-shadow: 0px 4px 10px rgb(48,48,48);
+  /*min-height: 547px*/
+}
+
+.first {
+ background-image: url('http://i.imgur.com/k3RrcFc.jpg'); 
+}
+
+.second {
+  background-image: url('http://i.imgur.com/XvsXNMN.jpg');
+}
+
+.third {
+  background-image: url('http://i.imgur.com/99HC612.jpg');
+ }
+
+ .fourth { 
+  background-image: url('http://i.imgur.com/UYgK734.jpg');
 }
 
 p {
@@ -152,15 +173,12 @@ p {
 aside {
   float: right;
   position: relative;
-  box-shadow: 0px 4px 10px grey;
   background: rgba(130, 130, 130, 0.8);
   border-radius: 5px;
   padding-left: 10 px;
   color: white;
   text-align: center;
-  height: 500px;
-  width: 30%;
-  max-width: 240px text-align: justify;
+  max-width: 25%;
 }
 
 aside h2 {
@@ -180,5 +198,5 @@ aside img {
 /*footer*/
 
 footer {
-  color: rga(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
