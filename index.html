@@ -8,15 +8,12 @@
 	<title>Wild Circus</title>
 </head>
 
-
-<!DOCTYPE html>
-
 <body>
-    <header>
+    <header id='all_header'>
 
     <!--barre de menu horizontale + menu déroulant-->
 
-    <nav class='nav' role='navigation'>
+    <nav class='nav'>
               
       <ul id='menu'>
           <li><a href='https://jsfiddle.net/Aurore77/zpnp44ba/12/#&amptogetherjs=4lLy3JHQHH'>Home</a>
@@ -53,17 +50,15 @@
           <li id='logo'>
             <a href='https://www.facebook.com/'><img src='http://i.imgur.com/WQGuGwv.png?3' alt='Facebook' /></a>
             <a href='https://www.twitter.com/'><img src='http://i.imgur.com/IY7IrIx.png?1' alt='Twitter' /></a>
-           <a href='https://www.instagram.com/'><img src='http://i.imgur.com/D6CWE6a.png?1' alt='Instagram' /></a>
+            <a href='https://www.instagram.com/'><img src='http://i.imgur.com/D6CWE6a.png?1' alt='Instagram' /></a>
             <a href='https://fr.pinterest.com/'><img src='http://i.imgur.com/MQE0mb3.png?1' alt='Pinterest' /></a>
             <a href='https://www.youtube.com/'><img src='http://i.imgur.com/sV02iBn.png?1' alt='Youtube' /></a>
-          </li>
-            
           </li>
       </ul>
     </nav>
 
     <!--image de fond-->
-    <div id='lion' alt='lion'>
+    <div id='header_img'>
       <img src='http://i.imgur.com/GY4o0s8.jpg' id='lion' alt='Meet the human pimitive side' />
     </div>
 
@@ -72,15 +67,43 @@
   <!--section presentation performances + planning and tickets-->
 
   <section>
-
-    <article>
-
+      <h1>WILD CIRCUS NEW SHOW :</h1>
+      
+<!--Bulle date tournée achat de tickets-->
+    <nav id="tour">
       <h2>
-      KARUVAM
+        ON TOUR:
       </h2>
-      <h4>
-      Enter the empire of KARUVAM! An epic adventure of love and conflict where natural elements are raging.
-      </h4>
+        
+      <ul>
+        <li>
+            <strong>June & July 2016</strong> - New Victory Theater - New York<br />
+        </li>
+        <li>
+            <strong>15 August to 30 Sept 2016</strong> - Criterion Theatre - London<br />
+        </li>
+        <li>
+            <strong>October 2016</strong> - The Edinburgh Playhouse<br />
+        </li>
+        <li>
+            <strong>November 2016</strong> - The Olympia Theater - Dublin
+            <br/>
+            <br />
+        </li>
+        <li>
+            <a href='#' class='button_book'>BOOK NOW</a>
+        </li>
+      </ul>
+    </nav>
+<!--Performances-->
+    <article id='slide_show'>
+
+      <h1>
+        KARUVAM
+      </h1>
+      <h2>
+        Enter the empire of KARUVAM! An epic adventure of love and conflict where natural elements are raging.
+      </h2>
 
       <div class="first performance_description">
         <p>
@@ -119,32 +142,6 @@
         </p>
       </div>
     </article>
-
-    <!--Bulle date tournée achat de tickets-->
-    <aside>
-      <h2>
-      TOUR DATES:
-      </h2>
-
-      <ul>
-        <li>June and July 2016 - New Victory Theater - New York
-          <br/>
-          <a href='#' class='button_green'><img src='http://i.imgur.com/hu5PJqG.png?1' alt='buy tickets' /></a>
-        </li>
-        <li>15 August to 30 Sept 2016 - Criterion Theatre - London
-          <br/>
-          <a href='#' class='button_green'><img src='http://i.imgur.com/hu5PJqG.png?1' alt='buy tickets' /></a>
-        </li>
-        <li>October 2016 - The Edinburgh Playhouse
-          <br/>
-          <a href='#' class='button_green'><img src='http://i.imgur.com/hu5PJqG.png?1' alt='buy tickets' /></a>
-        </li>
-        <li>November 2016 - The Olympia Theater - Dublin
-          <br/>
-          <a href='#' class='button_green'><img src='http://i.imgur.com/hu5PJqG.png?1' alt='buy tickets' /></a>
-        </li>
-      </ul>
-    </aside>
   </section>
 
   <footer>

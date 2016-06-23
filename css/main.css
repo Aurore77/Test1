@@ -1,222 +1,292 @@
 /*page*/
 
 body {
-  background: rgba(0, 0, 0, 1);
-  font-family: Agency Fb;
-  font-size: 20px;
+    background: rgba(0, 0, 0, 1);
+    font-family: Agency Fb;
+    font-size: 20px;
+    max-width: 1200px; /*pour éviter que tout se décale et que les img des divs soient en long*/
+    margin: auto;
+    
 }
 
-#lion {
-  margin-top: 60px;
+a {
+    text-decoration: none;
+    color: white;
 }
 
-#lion img {
-/*margin-left: 4em;*/
+#all_header {
+    display: flex;
+    /*flex-wrap: nowrap;*/
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+}
+
+#header_img {
+    position: relative;
+    margin-top: -200px;
+    /*padding-top: -1000px;*/
 }
 
 /* Navigation */
 
 nav {
-  color: white;
-  position: fixed;
-  z-index: 2;
+    color: white;
+    position: fixed;
+    z-index: 2; /*pour passer au desus de tout en position fixed*/
 }
 
 /*menu de navigation*/
 
-#menu {
-  /*font-family: Arial;
-  font-size: 15px;*/
-}
+/*#menu {
+    font-family: Arial;
+    font-size: 15px;
+}*/
 
 #menu, #menu ul {
-  display: inline;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  color: white;
-  white-space: nowrap;
-  font-weight: bold;
+    display: inline;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    /*white-space: nowrap;*/
+    font-weight: bold;
 }
+
+/*#menu ul, #menu li {
+    width: 10em;    -->ne sert à rien mis en #menu li
+}*/
 
 #menu li {
-  background: black;
-  background: -o-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  float: left;
-  border-right: 2px solid white;
-  padding: 0;
-  width: 12em;
-}
-
-#menu a {
-  color: white;
-  text-decoration: none; 
+    background: black;
+    background: -o-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    float: left;
+    border-left: 2px solid white;
+    padding: 0;
+    width: 8.79em;
+    align-content: center;
+    
 }
 
 /*parce que IE ne reconnaît pas le sélecteur supérieur*/
 html<body #menu li {
-  border-right: 1px solid transparent;  
+    border-right: 1px solid transparent;  
 }
 
 #menu li ul {
-  display: none;
-  position: absolute;
-  /*width: 144px;*/
+    display: none;
+    position: absolute;
+    /*width: 144px;*/
 }
 
 #menu li ul li {
-  border-top: 1px solid white;
+    border-top: 1px solid white;
 }
 
 html<body #menu li ul li {
-  border-top: 1px solid transparent;
+    border-top: 1px solid transparent;
 }
 
 #menu li ul ul {
-  margin: -22px 0 0 144px;
-  border-left: 1px solid white;
+    margin: -22px 0 0 144px;
+    border-left: 1px solid white;
 }
 
 #menu li:hover ul{
-  display: block;
-  position: relative;
-  top: 0;
-  /*left: -25px;*/
+    display: block;
+    position: relative;
+    top: 0;
+    /*left: -25px;*/
 }
 
 #menu a:hover {
-  border-bottom: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
 }
 
 #menu li:hover {
-  background: rgb(30,30,30);
-  background: -o-linear-gradient(bottom, rgba(30,30,30,1), rgba(30,30,30,.4));
-  background: -webkit-linear-gradient(bottom, rgba(30,30,30,1), rgba(30,30,30,.4));
-  background: -moz-linear-gradient(bottom, rgba(30,30,30,1), rgba(30,30,30,.4));
-  /*background: highlight;*/
+    background: rgb(30,30,30);
+    background: -o-linear-gradient(bottom, rgba(30,30,30,1), rgba(30,30,30,.4));
+    background: -webkit-linear-gradient(bottom, rgba(30,30,30,1), rgba(30,30,30,.4));
+    background: -moz-linear-gradient(bottom, rgba(30,30,30,1), rgba(30,30,30,.4));
+    /*background: highlight;*/
 }
 
 #no_display a {
-  background: none
+    background: none;
+}
+
+#logo {
+        border-right: 2px solid white;
 }
 
 /*section*/
 
 section {
-  margin: 15px 30px 30px 30px;
-  box-shadow: 0px 4px 10px rgb(48,48,48);
+    margin: 15px 30px 15px 30px;
+    color: black;
+    /*box-shadow: 0px 4px 10px rgb(48,48,48);*/
 }
 
-/* article */
+section h1 {
+    color: white; /*pour que 'Wild circus new show' soit visible sur fond noir*/
+}
 
-article {
-  position: relative;
-  float: left;
-  background: rgba(255, 255, 255, .95);
-  padding: 15px 20px 10px 20px;
-  text-align: justify;
-  margin: 0px auto;
-  max-width: 70%;
+/* articles */
+
+/*tour*/
+
+#tour {
+    display: block;
+    list-style: none;
+    position: relative;
+    /*float: right;*/
+    /*max-width: 40%;*/
+    text-align: center;
+    line-height: 30px;
+    /*z-index: 1;*/
+    /*padding-left: 10 px;*/
+    /*max-width: 25%;*/
+    /*float: top;*/
+    /*align-self: center;*/
+    padding-right: 40px;
+    margin-left: 5px;
+}
+
+#tour li {
+    display: inline;
+    white-space: nowrap;
+    /*list-style: none;*/
+    /*padding-right: 40px;*/
+}
+
+#tour h2 {
+    text-decoration: underline;
+}
+
+#tour a {
+    background-color: rgba(220,20,60,.7);
+    padding: 4px 12px 4px 12px;
+    border-radius: 6px;
+}
+
+/*#tour:hover {
+    background: rgb(30,30,30);
+    background: -o-linear-gradient(bottom, rgba(30,30,30,1), rgba(30,30,30,.4));
+    background: -webkit-linear-gradient(bottom, rgba(30,30,30,1), rgba(30,30,30,.4));
+    background: -moz-linear-gradient(bottom, rgba(30,30,30,1), rgba(30,30,30,.4));
+    border-radius: 100px;
+}*/
+
+#tour a:hover {
+    background-color: rgba(220,20,60,1);
+}
+
+/*slide_show*/
+
+#slide_show {
+    display: flex; /*pour pouvoir le déplacer*/
+    flex-direction: column; /*pour éviter que tous les divs soient sur la même ligne*/
+    flex-wrap: wrap;
+    position: relative;
+    /*align-self: flex-end;*/
+    /*float: left;*/
+    background: rgba(255, 255, 255, .95);
+    padding: 15px 20px 10px 20px;
+    text-align: justify;
+    /*max-width: 70%;*/
+}
+
+#slide_show h1 {
+    color: black; /*car la couleur de h1 par défaut = blanc*/
 }
 
 div {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  color: white;
-  padding: 300px 0px 0px 0px;
-  margin-bottom: 15px;
-  max-width: 1100px;
-  /*padding-top: 130px;
-  box-shadow: 0px 4px 10px rgb(48,48,48);*/
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    padding: 300px 0px 0px 0px;
+    margin-bottom: 15px;
+    /*padding-top: 130px;
+    box-shadow: 0px 4px 10px rgb(48,48,48);*/
+}
+
+/*div img {
+    max-width: 1100px;
+}*/
+
+h1 {
+    font-size: 38px;
+    font-style: italic;
 }
 
 h2 {
-  font-size: 34px;
+    font-size: 30px;
 }
 
 p {
-  background: black;
-  background: -o-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  padding: 10px;
-  line-height: 25px;
-  text-align: justify;
-  font-size: 30px;
-  font-weight: bold;
-  bottom: 0,
-  margin: 0 auto;
-  /*height: 100px;*/
+    background: black;
+    background: -o-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    padding: 10px;
+    line-height: 25px;
+    text-align: justify;
+    font-size: 30px;
+    font-weight: bold;
+    bottom: 0,
+    margin: 0 auto;
+    /*height: 100px;*/
 }
 
 small {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .first {
- background-image: url('http://i.imgur.com/k3RrcFc.jpg'); 
+    background-image: url('http://i.imgur.com/k3RrcFc.jpg');
 }
 
 .second {
-  background-image: url('http://i.imgur.com/XvsXNMN.jpg');
+    background-image: url('http://i.imgur.com/XvsXNMN.jpg');
 }
 
 .third {
-  background-image: url('http://i.imgur.com/99HC612.jpg');
+    background-image: url('http://i.imgur.com/99HC612.jpg');
  }
 
  .fourth { 
-  background-image: url('http://i.imgur.com/UYgK734.jpg');
+    background-image: url('http://i.imgur.com/UYgK734.jpg');
 }
 
 /*small {
-  display: none;
-  position: absolute;
+    display: none;
+    position: absolute;
 }*/
-
-/*aside*/
-
-aside {
-  float: right;
-  position: relative;
-  background: rgba(255,255,255,1);
-  padding-left: 10 px;
-  color: black;
-  text-align: center;
-  max-width: 25%;
-}
-
-aside h2 {
-  text-align: center;
-}
-
-aside li {
-  list-style-type: none;
-  text-align: center;
-  padding-right: 40px;
-}
-
-aside img {
-  padding: 5px;
-}
 
 /*footer*/
 
 footer {
-  color: green;
-  position: absolute;
-  bottom: 0;
-  margin: 0 auto;
+    display: flex;
+    position: relative;
+    align-self: flex-end;
+    clear: both;
+    color: green;
+    bottom: 0;
+    margin: 0 auto;
+    z-index: 2;
 }
 footer li {
-  display: inline;
-  list-style: none;
-  padding-right: 40px;
+    clear: both;
+    display: inline;
+    list-style: none;
+    padding-right: 40px;
 }
