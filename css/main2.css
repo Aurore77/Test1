@@ -1,17 +1,61 @@
-/*page*/
+/*   Styles de la Page        */
 
 body {
     background: rgba(0, 0, 0, 1);
     font-family: 'Agency Fb';
-    font-size: 20px;
-    max-width: 1200px; /*pour éviter que tout se décale et que les img des divs soient en long*/
-    margin: auto;   
+    font-size: 30px;
+/*    max-width: 1200px; pour éviter que tout se décale et que les img des divs soient en long*/
+    margin: auto; 
+    margin: 80px;
+}
+
+h1 {
+    font-size: 60px;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 50px;
+    font-style: italic;
+    margin-bottom: -20px;
+}
+
+h3 {
+    font-size: 40px;
+    margin-bottom: -20px;
+}
+
+h4 {
+    font-size: 38px;
+    margin-bottom: -5px
+}
+
+p {
+        font-size: 36px;
+}
+
+small {
+    font-size: 30px;
+    align-self: flex-end;
+    font-weight: normal;
 }
 
 a {
     text-decoration: none;
     color: white;
 }
+
+article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 15px 20px 10px 20px;
+}
+
+
+
+/*       Header       */
 
 #all_header {
     display: flex;
@@ -20,20 +64,30 @@ a {
     align-items: center;
 }
 
-#header_img {
+header div {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-    margin-top: -240px;
+    color: white;
+    padding: 60px 0px 0px 0px;
 }
 
-/* Navigation */
 
-nav {
+/*      Navigation    */
+
+header nav {
+    display: flex;
+    align-self: stretch;
     color: white;
     position: fixed;
     z-index: 2; /*pour passer au desus de tout en position fixed*/
 }
 
-/*menu de navigation*/
+
+/*      menu de navigation    */
 
 /*
 #menu {
@@ -116,16 +170,20 @@ html<body #menu li ul li {
         border-right: 2px solid white;
 }
 
-/*section*/
+
+
+/*        section         */
 
 section {
     margin: 15px 30px 15px 30px;
     color: white;
 }
 
-/* articles */
 
-/*tour*/
+
+/*      articles         */
+
+/*        tour           */
 
 #tour {
     display: block;
@@ -142,7 +200,7 @@ section {
 /*    white-space: nowrap;*/
 }
 
-#tour h2 {
+#tour h3 {
     text-decoration: underline;
 }
 
@@ -156,21 +214,16 @@ section {
     background-color: rgba(220,20,60,1);
 }
 
-/*slide_show*/
 
-article {
-    display: flex;
-    flex-direction: column;
-}
+
+/*          slide_show      */
+
 
 #slide_show {
-    flex-wrap: wrap;
-    position: relative;
-    padding: 15px 20px 10px 20px;
-    text-align: justify; 
+        text-align: justify; 
 }
 
-div {
+#slide_show div {
     display: flex;
     flex-wrap: wrap;
     background-size: cover;
@@ -181,44 +234,39 @@ div {
     padding: 300px 0px 0px 0px;
 }
 
-.performance_description {
-    margin: 6px;
-    border: 10px solid white;
-    border-radius: 50px;
-}
-
-h1 {
-    font-size: 38px;
-    font-style: italic;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-p {
+#slide_show div p {
     display: flex;
+    align-self: flex-end;
     flex-direction: column;
     background: black;
     background: -o-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
     background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
     background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
     padding: 10px;
-    line-height: 25px;
+/*    height: 120px; pour media query*/
+    height: 90px;
+    line-height: 40px;
     text-align: justify;
-    font-size: 30px;
     font-weight: bold;
     bottom: 0;
     margin: 0 auto;
 }
 
-small {
-    font-size: 16px;
-    align-self: flex-end;
+.performance_description {
+    margin: 6px;
+    border: 10px solid white;
+    border-radius: 50px;
+    min-height: 450px;
 }
 
 .first {
     background-image: url('http://i.imgur.com/k3RrcFc.jpg');
+    margin-top: 40px;
+}
+
+.first p {
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px
 }
 
 .second {
@@ -238,7 +286,24 @@ small {
     position: absolute;
 }*/
 
-/*footer*/
+
+
+/*      Section history       */
+
+quote {
+    font-style: oblique;
+    margin: 20px; /* tabulation */
+}
+
+
+
+/*      Section Group           */
+
+
+
+
+
+/*       footer        */
 
 footer {
     display: flex;

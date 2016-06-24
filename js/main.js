@@ -1,9 +1,17 @@
-${(function() {
-    var $submit, $mail;
-    $submit = $('.button_submit');
-    $mail = $('#mail');
-            });
-  $submit.on('click', function () {
-      $submit.slideUp(2000);
-  });
-};
+$(document).ready( function () {
+    // Add return on top button
+    $('body').append('<div id="returnOnTop" title="Retour en haut">&nbsp;</div>');
+    
+    // On button click, let's scroll up to top
+    $('#returnOnTop').click( function() {
+        $('html,body').animate({scrollTop: 25}, 'slow');
+    });
+});
+
+$(window).scroll(function() {
+    // If on top fade the bouton out, else fade it in
+    if ( $(window).scrollTop() == 0 )
+        $('#returnOnTop').fadeOut();
+    else
+        $('#returnOnTop').fadeIn();
+});
