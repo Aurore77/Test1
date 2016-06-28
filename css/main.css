@@ -3,15 +3,50 @@
 body {
     background: rgba(0, 0, 0, 1);
     font-family: 'Agency Fb';
-    font-size: 20px;
+    font-size: 30px;
     max-width: 1200px; /*pour éviter que tout se décale et que les img des divs soient en long*/
     margin: auto;   
+    color: white;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 60px;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 50px;
+    font-style: italic;
+    margin-bottom: -20px;
+}
+
+h3 {
+    font-size: 40px;
+    margin-bottom: -20px;
+}
+
+h4 {
+    font-size: 38px;
+    margin-bottom: -5px
+}
+
+p {
+    font-size: 36px;
+}
+
+small {
+    font-size: 30px;
+    align-self: flex-end;
+    font-weight: normal;
 }
 
 a {
     text-decoration: none;
     color: white;
 }
+
+
 
 #all_header {
     display: flex;
@@ -20,14 +55,31 @@ a {
     align-items: center;
 }
 
+/*
+header div {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    padding: 60px 0px 0px 0px;
+}
+*/
+
+/*
 #header_img {
     position: relative;
     margin-top: -240px;
 }
+*/
 
 /* Navigation */
 
-nav {
+header nav {
+    display: flex;
+    align-self: stretch;
     color: white;
     position: fixed;
     z-index: 2; /*pour passer au desus de tout en position fixed*/
@@ -50,16 +102,10 @@ nav {
     height: 60px;
     line-height: 60px;
     text-align: center;
-    color: white;
+/*    color: white;*/
     font-weight: bold;
 /*    white-space: nowrap;*/
 }
-
-/*
-#menu ul, #menu li {
-    width: 10em;    -->ne sert à rien mis en #menu li
-}
-*/
 
 #menu li {
     background: black;
@@ -82,7 +128,6 @@ html<body #menu li {
 #menu li ul {
     display: none;
     position: absolute;
-/*    width: 144px;*/
 }
 
 #menu li ul li {
@@ -102,7 +147,6 @@ html<body #menu li ul li {
     display: block;
     position: relative;
     top: 0;
-/*    left: -25px;*/
 }
 
 #menu a:hover {
@@ -127,22 +171,9 @@ html<body #menu li ul li {
 /*section*/
 
 section {
-/*
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-*/
     margin: 15px 30px 15px 30px;
     color: white;
-/*    max-width: 1200px;*/
-/*    box-shadow: 0px 4px 10px rgb(48,48,48);*/
 }
-
-/*
-section h1 {
-    color: white; pour que 'Wild circus new show' soit visible sur fond noir
-}
-*/
 
 /* articles */
 
@@ -156,53 +187,32 @@ section h1 {
     line-height: 30px;
     padding-right: 40px;
     margin-left: 5px;
-    padding-right: 40px;
-    margin-left: 5px;
-/*
-    max-width: 40%;
-    float: right;
-    z-index: 1;
-    padding-left: 10 px;
-    max-width: 25%;
-    float: top;
-    align-self: center;
-*/   
 }
 
 #tour li {
     display: inline;
-/*  
-    white-space: nowrap;
-    list-style: none;
-    padding-right: 40px;
-*/
+/*    white-space: nowrap;*/
 }
 
-#tour h2 {
+#tour h3 {
     text-decoration: underline;
 }
 
-/*#tour a {*/
 .button_book, .button_submit {
     background-color: rgba(220,20,60,.7);
     padding: 4px 12px 4px 12px;
     border-radius: 6px;
 }
 
-/*#tour:hover {
-    background: rgb(30,30,30);
-    background: -o-linear-gradient(bottom, rgba(30,30,30,1), rgba(30,30,30,.4));
-    background: -webkit-linear-gradient(bottom, rgba(30,30,30,1), rgba(30,30,30,.4));
-    background: -moz-linear-gradient(bottom, rgba(30,30,30,1), rgba(30,30,30,.4));
-    border-radius: 100px;
-}*/
-
-/*#tour a:hover {*/
 .button_book:hover {
     background-color: rgba(220,20,60,1);
 }
 
-/*slide_show*/
+/*      Show      */
+
+
+
+/*      slide_show      */
 
 article {
     display: flex;
@@ -213,23 +223,9 @@ article {
     flex-wrap: wrap;
     position: relative;
     padding: 15px 20px 10px 20px;
-    text-align: justify;
-/*
-    display: flex; pour pouvoir le déplacer
-    flex-direction: column; pour éviter que tous les divs soient sur la même ligne
-    align-self: flex-end;
-    float: left;
-    background: rgba(255, 255, 255, .95); met en blanc le fond des performances
-    max-width: 70%;
-*/
 }
 
-/*
-#slide_show h1 {
-    color: black; car la couleur de h1 par défaut = blanc
-}*/
-
-div {
+#slide_show div {
     display: flex;
     flex-wrap: wrap;
     background-size: cover;
@@ -238,62 +234,25 @@ div {
     position: relative;
     color: white;
     padding: 300px 0px 0px 0px;
-/*  margin-bottom: 30px;
-    padding-top: 130px;
-    box-shadow: 0px 4px 10px rgb(48,48,48);
-*/
 }
 
+#slide_show div p {
+    font-weight: bold;
+    margin: auto;
+    width: 95%;
+    text-align: justify;
+    border-radius: 20px;
+}
+    
 .performance_description {
     margin: 6px;
     border: 10px solid white;
     border-radius: 50px;
 }
 
-/*div img {
-    max-width: 1100px;
-}*/
-
-h1 {
-    font-size: 38px;
-    font-style: italic;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-p {
-    display: flex;
-    flex-direction: column;
-    background: black;
-    background: -o-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-/*
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px; --> POUR MEDIA QUERY
-*/
-    padding: 10px;
-    line-height: 25px;
-    text-align: justify;
-    font-size: 30px;
-    font-weight: bold;
-    bottom: 0;
-    height: 100px;
-    margin: 0 auto;  /*pour centrer*/
-/*  height: 100px;
-    align-items: center;
-    justify-content: space-between;*/
-}
-
-small {
-    font-size: 16px;
-    align-self: flex-end;
-}
-
 .first {
     background-image: url('http://i.imgur.com/k3RrcFc.jpg');
+    margin-top: 40px;
 }
 
 .second {
@@ -312,6 +271,38 @@ small {
     display: none;
     position: absolute;
 }*/
+
+
+/*      Section History       */
+
+#quote {
+    font-style: oblique;
+    margin: 20px; /* tabulation */
+}
+
+#fly {
+   position: absolute;
+    align-self: center;
+/*
+    min-width: 50%;
+    min-height: 50%;
+*/
+/*    max-width: 1200px;*/
+    z-index: -100;
+    width: auto;
+    height: auto;
+    overflow: hidden;  
+}
+
+
+/*      Section Group           */
+
+
+
+
+
+
+
 
 /*footer*/
 
@@ -335,12 +326,7 @@ footer div {
     padding-top: 15px;
     padding-bottom: 15px;
     width: 12em;
-/*  clear: both;
-    display: inline;
-    list-style: none;
-    align-items: center;
-    padding-right: 40px;
-*/
+    flex-wrap: nowrap;
 }
 
 .button_submit {
@@ -349,7 +335,7 @@ footer div {
 
 /*
 footer div:hover {
-color: highlight;
+    color: highlight;
 }
 */
 

@@ -4,7 +4,7 @@ $(document).ready( function () {
     
     // On button click, let's scroll up to top
     $('#returnOnTop').click( function() {
-        $('html,body').animate({scrollTop: 25}, 'slow');
+        $('html,body').animate({scrollTop: 0}, 'slow');
     });
 });
 
