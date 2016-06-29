@@ -11,12 +11,14 @@ font-family: 'Agency Fb', 'Arial';
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 80px;
     font-style: italic;
+	text-align: center;
+	color: rgb(220,20,60);
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 55px;
     font-style: italic;
     margin-bottom: -20px;
 }
@@ -63,7 +65,7 @@ a {
     color: white;
 }
 
-h1:hover, h2:hover, h3:hover, #develop:hover {
+h2:hover, h3:hover, #develop:hover {
 		color: rgb(220,20,60);
 }
 
@@ -245,9 +247,13 @@ section {
     list-style: none;
 }
 
+#characters {
+	border-bottom: 3px solid white;
+}
 
-
-
+#show h3 {
+	margin-top: 50px;
+}
 
 
 /*      slide_show      */
@@ -320,6 +326,10 @@ section {
     display: none;
     position: absolute;
 }*/
+
+
+
+
 
 
 /*      Section History       */
