@@ -287,10 +287,10 @@ section {
 	padding: 2%;
     border-bottom-left-radius: 40px;
 	border-bottom-right-radius: 40px;
-	background: rgb(30,30,30);
-    background: -o-linear-gradient(bottom, rgba(30,30,30,1), rgba(30,30,30,.4));
-    background: -webkit-linear-gradient(bottom, rgba(30,30,30,1), rgba(30,30,30,.4));
-    background: -moz-linear-gradient(bottom, rgba(30,30,30,1), rgba(30,30,30,.4));
+	bbackground: black;
+    background: -o-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
 }
     
 .performance_description {
@@ -357,7 +357,7 @@ section {
 #fly {
    position: absolute;
    align-self: center;
-   margin-top: -610px;
+/*   margin-top: -610px;*/
 /*
     min-width: 50%;
     min-height: 50%;
