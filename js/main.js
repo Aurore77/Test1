@@ -21,31 +21,22 @@ $(window).scroll(function() {
 
 
 
+//Essai slideToggle Texte Artists
+
+$(document).ready(function() {
+	$('.develop').click(function() {
+		$('.description').hide();
+		var artist= $(this).data('artist');
+		$('.description[data-artist="' + artist+ '"]').slideToggle('fast', function() {
+		
+		});			
+	});	
+});
+
+
 
 // Essai slide performances
 
 $(document).ready( function() {
 
 });
-
-
-//Essai Slide texte description personnage
-
-$(document).ready( function() {
-
-});
-
-
-
-
-//Essai slideToggle Texte Artists
-
-$(document).ready(function() {
-	$('.develop').click(function() {
-		$('.description').slideToggle('slow', function() {
-			
-		});
-	});	
-});
-
-//$(document).ready(function() { $('.descritpion').click function () { $(this).slideUp('slow', function() { }); }); });

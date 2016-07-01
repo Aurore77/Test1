@@ -35,22 +35,19 @@ h3 {
 }
 
 h4 {
-    font-size: 38px;
+    font-size: 34px;
     margin-bottom: -15px;
 }
 
 h5 {
 	font-size: 32px;
 }
+
 p {
     font-size: 32px;
 }
 
 small {
-/*
-	display: none;
-    position: absolute;
-*/
     font-size: 28px;
     align-self: flex-end;
     font-weight: normal;
@@ -72,7 +69,6 @@ section {
 
 div {
 	padding: 20px 0px;
-/*	padding-top: 20px;*/
 }
 
 
@@ -88,7 +84,7 @@ div {
 	margin-top: 30px;
 }
 
-.story, .perf, .who, .group {
+#story, .perf, .who, .group {
 	border-top: 3px solid white;
 }
 
@@ -107,10 +103,13 @@ div, #artists, #slide_show {
 /*				   	:HOVER					 */
 /*-------------------------------------------*/
 
-h2:hover, h3:hover, #develop:hover {
+h3:hover {
 	color: rgb(220,20,60);
 }
 
+h2:hover {
+	color: limegreen;
+}
 
 
 /*--------------------------------------------------------------------------*/
@@ -148,9 +147,11 @@ header nav {
     z-index: 2; /*pour passer au desus de tout en position fixed*/
 }
 
+/*
 nav ul {
-	margin: 0;
+	margin-left: 0;
 }
+*/
 
 
 /*--------------------------------*/
@@ -169,6 +170,10 @@ nav ul {
 /*    white-space: nowrap;*/
 }
 
+#menu {
+	margin: 0;
+}
+
 #menu li {
     background: black;
     background: -o-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
@@ -179,8 +184,7 @@ nav ul {
     padding: 0;
 	min-width: 220px;
     max-width: 220px;
-    align-content: center;
-    
+    align-content: center;    
 }
 
 /*		car IE ne reconnaît pas le sélecteur supérieur		*/
@@ -278,21 +282,76 @@ html<body #menu li ul li {
 /*						SECTION .SHOW							*/
 /*--------------------------------------------------------------*/
 
-.show ul {
-    padding-left: 0;
-    list-style: none;
-}
-
-/*
-#characters {
-border-bottom: 3px solid white;
-}
-*/
-
 .show h3 {
 	margin-top: 0px;
 	padding-top: 20px;
 }
+
+.show h4 {
+/*	padding-top: -80px;*/
+
+}
+
+.eachCharacter p {
+	font-size: 30px;
+}
+
+.show ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+/*
+	justify-content: space-around;
+	align-content: space-around;
+	align-items: center;
+	align-self: center;
+*/
+	list-style: none;
+	margin-top: 30px;
+/*	margin-bottom: 0;*/
+	padding: 0;
+	background-color: rgba(220,20,60,.2);
+	border-radius: 20px; 
+	text-align: justify;	
+}
+
+.show li {	
+	width: 50%;
+/*	height: 330px;*/
+	padding: 0px 20px 0px 20px;
+/*	border-left: 1px solid white;*/
+/*	padding-top: -20px;*/
+}
+
+/*
+#gevurak {
+ 	position: relative;
+	float: left;
+}
+
+#fritran {
+	position: relative;
+	float: right;
+}
+
+#melindra {
+	float:left;
+	margin-top: 330px;
+	margin-left: -1145px;
+}
+
+#bellimon {
+	float: right;
+	margin-top: 330px;
+}
+*/
+
+.show li:hover {
+	background-color: rgba(220,20,60,.5);
+	border-radius: 20px;
+	border-left: 10px solid white;
+}
+
 
 
 /*--------------------------------------------------------------*/
@@ -372,17 +431,6 @@ border-bottom: 3px solid white;
 /*						SECTION .WHO							*/
 /*--------------------------------------------------------------*/
 
-/* #who {
-    display: inline-flex;
-}
-
-#who h3,#who h4,#who div {
-    margin-left: 45px    
-} 
-*/
-
-
-
 /*--------------------------------*/
 /*		ARTICLE #HISTORY	  	  */
 /*--------------------------------*/
@@ -402,13 +450,12 @@ border-bottom: 3px solid white;
     overflow: hidden;
 	margin-left:-5px;
 	margin-top: -105px;
-/*
-	margin-top: -610px;
- 	min-width: 50%;
-    min-height: 50%;
-*/
 }
 
+#history h3 {
+	text-align: left;
+	text-decoration: underline;
+}
 
 
 /*--------------------------------*/
@@ -421,6 +468,7 @@ border-bottom: 3px solid white;
 
 #artists button{
 	display: inline-flex;
+	flex-direction: column;
 	align-items: center;
 }
 
@@ -435,6 +483,9 @@ border-bottom: 3px solid white;
 	border: 5px solid white;
 }
 
+.develop img {
+	vertical-align: middle;	
+}
 /*
 .andy { 
 max-height: 123px;
@@ -459,6 +510,10 @@ max-height: 123px;
 		border-bottom: none; 
 }
 
+.group ul {
+	list-style: none;
+}
+
 .group_contact ul {
 	text-align: center;
 	margin-top: 50px;
@@ -469,7 +524,7 @@ max-height: 123px;
 }
 
 .group a:hover {
-	color: rgb(220,20,60);
+	color: limegreen;
 }
 
 .group_contact h3 {
@@ -533,16 +588,6 @@ footer {
     justify-content: space-around;
 	margin-top: 60px;
 	margin-bottom: 60px;
-/*    line-height: 28px;
-    align-self: flex-start;
-    clear: both;
-    color: white;
-    bottom: 0;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    padding: 10px;
-    z-index: 2;
-*/
 }
 
 footer div {
@@ -553,8 +598,12 @@ footer div {
 	border-style: none;
 }
 
+footer div a {
+	margin-left: 150px;
+}
+
 footer div a:hover {
-    color: crimson;
+    color: limegreen;
 }
 
 
@@ -562,13 +611,17 @@ footer div a:hover {
 /*						BUTTONS	   					*/
 /*--------------------------------------------------*/
 
-.button_submit {
-    margin-left: 100px;
+.button_book, .button_subscribe {
+    background-color: rgba(220,20,60,.7);
+    padding: 4px 12px 4px 12px;
+    border-radius: 6px;
 }
-.button_submit:hover {
+
+.button_book:hover {
     background-color: rgba(220,20,60,1);
-	color: white;
+	color: limegreen;
 }
+
 
 button {
 	display: flex;
@@ -582,17 +635,18 @@ button {
 	font-family:'Agency Fb','Arial';
 	font-weight: bold;
 	border: none;
+	padding-bottom: 20px;
 }
 
-.button_book, .button_submit {
-    background-color: rgba(220,20,60,.7);
-    padding: 4px 12px 4px 12px;
-    border-radius: 6px;
+button:hover {
+	color: limegreen;
+	cursor: pointer;
 }
 
-.button_book:hover {
-    background-color: rgba(220,20,60,1);
+.button_subscribe {
+    margin-left: 200px;
 }
+
 
 /*--------------------------------*/
 /*		RETURN ON TOP BUTTON	  */
@@ -734,7 +788,6 @@ button {
 		font-size:
 	}
 	
-	
 	#logo {
 		border-right: none;
 	}
@@ -742,5 +795,30 @@ button {
 	.develop {
 		font-size: 28px;
 	}
-
+    
+    .show ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	list-style: none;
+	margin-top: 30px;
+	padding: 0;
+	background-color: rgba(220,20,60,.2);
+	border-radius: 20px; 
+	text-align: left;	
 }
+    .show li {	
+	width: 50%;
+/*	height: 330px;*/
+	padding: 0px 10px 0px 10px;
+/*	border-left: 1px solid white;*/
+/*	padding-top: -20px;*/
+}
+    
+    footer div a {
+    margin-left: 110px;
+    }
+    
+    .button_subscribe {
+       margin-left: 110px;
+    }

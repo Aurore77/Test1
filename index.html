@@ -18,7 +18,7 @@
 		
 		<a  href='http://i.imgur.com/4WXJ61k.jpg' class='icon'></a>
         
-        <nav class='.menu'>
+        <nav>
                 
             <ul id='menu'>
                 
@@ -130,15 +130,33 @@
 <!--                <iframe id='vid_gevurak' src="//my-wild-circus-1.libcast.com/widget/fire-mp4" class="libcast_player" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen></iframe>-->
             </p>
             
+			
             <article id='story'>
-                <h2>
-                    THE CENTRAL CHARACTERS
-                </h2>
-                
+				
+				<div id='trame'>
+                     
+                     <h2>
+                         THE STORY
+                    </h2>
+
+
+                    <p>    
+                        One night, counting his richness, Gevurak, conqueststhisrty King, realizes his land is too small for his magnificent greatness.<br />
+                        The King suddently decides to invade Karuvam the peaceful land of water with his army.<br />    
+                        Sent to investigate and spy on Marukamers' habits, General Fritran meets Princess Melindra on a fair in the city center.    Her charm works beautifully on the General.<br />    
+                        After spending some time together, they fall in love and reveal each other who they really are.<br />    
+                        The conquest will not be as easy as usual for Gevurak this time...
+                    </p>
+                </div> 
+				               
                 <div id='characters'>
-                    
+					
+					<h3>
+                    THE CENTRAL CHARACTERS
+                </h3>
+                                    
                     <ul class='eachCharacter'>
-                        <li>
+                        <li id='gevurak'>
                             <h4>
                              Gevurak
                             </h4>
@@ -148,7 +166,7 @@
                             </p>
                         </li>
                         
-                        <li>                    
+                        <li id='fritran'>                    
                             <h4>
                                 Fritran
                             </h4>
@@ -158,8 +176,8 @@
                                 Despite the fact that he is part of Gevurak's army and is following his King's orders, Fritran is a good man with feelings.
                             </p>
                         </li>
-                        
-                        <li>
+					
+                        <li id='melindra'>
                             <h4>
                              Melindra
                             </h4>
@@ -170,7 +188,7 @@
                         </li>
                         
 						
-                        <li>                    
+                        <li id='bellimon'>                    
                             <h4>
                                 Bellimon
                             </h4>
@@ -180,24 +198,7 @@
                             </p>
                         </li>
                     </ul>
-                </div>
-               
-			
-                <div id='trame'>
-                     
-                     <h3>
-                         THE STORY
-                    </h3>
-
-
-                    <p>    
-                        One night, counting his richness, Gevurak, conqueststhisrty King, realizes his land is too small for his magnificent greatness.<br />
-                        The King suddently decides to invade Karuvam the peaceful land of water with his army.<br />    
-                        Sent to investigate and spy on Marukamers' habits, General Fritran meets Princess Melindra on a fair in the city center.    Her charm works beautifully on the General.<br />    
-                        After spending some time together, they fall in love and reveal each other who they really are.<br />    
-                        The conquest will not be as easy as usual for Gevurak this time...
-                    </p>
-                </div>
+				</div>
             </article>
         </section>
         
@@ -209,9 +210,9 @@
                     FLAGSHIP PERFORMANCES
                 </h2>
                 
-                <h3>
+                <h5>
                     Let the elements of Nature enchant you.
-                </h3>
+                </h5>
                 
                 <ul class='eachPerf'>
                     <li class='first performance_description'>
@@ -276,10 +277,10 @@
                 </h3>
                 
                 <div>
-                    <button class='remove' title='A word from the Managerdescritpion'>
+                    <h4>
                         How to define us
-                    </button>
-                        <p id='quote' class='disappear'>
+                    </h4>
+                        <p id='quote' >
                             "People might think we are a bunch of crazy people under a mystical influence and they would be right ! We reinvent our profession throughout shows where Mother Nature is our biggest source of inspiration." 
 							<br /> 
 							<br/>
@@ -287,22 +288,22 @@
                         </small>
                     </p>
 					
-                     <button class='remove' title='Click to read'>
+                     <h4>
                         The Wild team birth
-					</button>
+					</h4>
                     
-                    <p class='disappear'>
+                    <p>
                         In the early 1990s, a troup of performers coming from South Africa landed in the harbour of Brighton in England. Juggling, fire-breathing and playing mystical music, they started to delight locals and visitors on Brighton Pier.<br />
                         Soon, they draw the attention of Max Dungleberg, one the most important Show Producers in the United Kingdom. M. Dungleberg, decided to offer them to ensure the first part of the Blackpool Tower Circus show. Since in 1990, the Blackpool Tower Circus stopped performing with animals, they were looking for a new concept. <br />
                         In six months, Wild Circus company, began to get well known.<br />
                         After sharing some of their knowledges and ideas with the Blackpool Tower company, Wild Circus troup decided to create its own first show. M. Dungleberg still charmed by the beauty of the mystical performances executed by Wild Circus, decided he would fund this first show "Magical Chikera". And that's how the story begun.
                     </p>
                     
-                     <button class='remove'  title='Click to read'>
+                     <h4>
                         To be continued... With you
-					</button>
+					</h4>
                     
-                    <p class='disappear'>
+                    <p>
                         Now in its third decade, Wild Circus troup has evolved and grown over the years, in numbers and in spirit. Nowadays, Wild Circus is famous worldwide but the essence of what we created stays the same: provoke your senses and invoke your imagination reminding you we are all children of Mother of Nature.
                     </p>
                 </div>                
@@ -315,47 +316,48 @@
                         THE ARTISTS
                     </h3>
                     
-                    <button class='develop' title='Click here to see who she is'>
+					
+					<button class='develop' data-artist='Paticha' title='Click here to see who she is'>
 						Paticha Erivols
 						<img src='http://i.imgur.com/tsidIb6.jpg' alt='Paticha Erivols'>
                     </button>
 					
-                    
-                    <p class='description'>
+                    <button class='develop' data-artist='Paulo' title='Click here to see who he is'>
+                        Paulo Pendaror
+						<img src="http://i.imgur.com/act4fjX.jpg" alt='Paulo Pendaror'>
+                    </button>
+					
+					 <button class='develop' data-artist='Miro' title='Click here to see who he is'>
+                        Miro Menasse
+						<img src='http://i.imgur.com/lAjPQdB.jpg' alt='Miro Menasse'>
+                    </button>
+					
+					 <button class='develop' data-artist='Andy' title='Click here to see who he is'>
+                        Andy Mac Nigall
+						<img class='andy' src="https://img0.etsystatic.com/013/1/7361422/il_170x135.422818328_36we.jpg" alt='Andy Mac Nigall'>
+                    </button>
+					
+					                             
+					
+					<p class='description' data-artist='Paticha'>
                         
 						Paticha Erivols was born in Mongolia. She started contorsion when she was 8 years old and practiced synchronized swimming for 13 years. After that, Paticha, became a professional artist and went to perfom in Asia for 10 years.<br />
                         She joined Wild Circus team in 2009. Paticha's intergration into the shows went smoothly and didn't take very long. Espacially since, she is a real professional artist.<br />
                         After 5 years in the team, she became one of the main characters in KARUVAM.
                     </p>
-                    
-                    <button class='develop' title='Click here to see who he is'>
-                        Miro Menasse
-						<img src='http://i.imgur.com/lAjPQdB.jpg' alt='Miro Menasse'>
-                    </button>
-                   
 					
-                    <p class='description'>                       
+                    <p class='description' data-artist='Paulo'>                        
+						Paulo Pendaror is part a third generation circus perfomers from Brasil. His primary activity is Hand to Hand with his brother Marcus. They entered the Wild Circus together in 2001.<br />
+                        Lately, Paulo and Marcus created a show involving lassos on fire. The Company enjoyed it and decided to add their performance to the new show Karuvam.
+                    </p>			
+										
+					 <p class='description' data-artist='Miro'>                       
 						Miro Lacasse was born in France. His mother was an acrobate and his father a juggler. He started juggling at 5 years old and fire-breathing at 14 years old.<br />
                         After several years working in fairs with his family, Miro decided to join our circus in 2005 as a juggler.<br />
                         After six more years practicing fire-breathing, Miro decided to improve his acts by adding fire in them.
-                    </p>
-                    
-                    <button class='develop' title='Click here to see who he is'>
-                        Paulo Pendaror
-						<img src="http://i.imgur.com/act4fjX.jpg" alt='Paulo Pendaror'>
-                    </button>
-                    
-                    <p class='description'>                        
-						Paulo Pendaror is part a third generation circus perfomers from Brasil. His primary activity is Hand to Hand with his brother Marcus. They entered the Wild Circus together in 2001.<br />
-                        Lately, Paulo and Marcus created a show involving lassos on fire. The Company enjoyed it and decided to add their performance to the new show Karuvam.
-                    </p>
-                    
-                    <button class='develop' title='Click here to see who he is'>
-                        Andy Mac Nigall
-						<img class='andy' src="https://img0.etsystatic.com/013/1/7361422/il_170x135.422818328_36we.jpg" alt='Andy Mac Nigall'>
-                    </button>
-                    
-                    <p class='description'>
+					</p>
+					
+					<p class='description' data-artist='Andy'>
 						Andy Mac Nigall hails from the United-States of America. His domain a various but two of them are most important : aerial silk and juggling.<br />
                         In 2013, after 10 years teaching the art of aerial silk in a Circus School, Andy was recruted by Wild Circus. Soon, a new show was created, and Andy has been offered the opportunity to be the King of Marukam: Gevurak in it.<br />
 					</p>
@@ -434,7 +436,7 @@
         </div>
         
         <div>
-            <a href='#' class='button_submit' title='Click here to see the last Newsletter'>NEWSLETTER</a>
+            <a href='#' class='button_subscribe' title='Click here to see the last Newsletter'>NEWSLETTER</a>
         </div>
         
     </footer>
