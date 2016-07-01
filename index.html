@@ -15,10 +15,10 @@
     <header id='all_header'>
 
 <!--barre de menu horizontale + menu déroulant-->
+		
+		<a  href='http://i.imgur.com/4WXJ61k.jpg' class='icon'></a>
         
-<!--<img src='http://i.imgur.com/vNDJM2q.jpg' alt='logo' id='logo_wc'/>-->
-        
-        <nav class='full_menu'>
+        <nav class='.menu'>
                 
             <ul id='menu'>
                 
@@ -28,14 +28,14 @@
                 </li>
 -->
                 
-                <li><a href='#who'>About us</a>
+                <li><a href='#who' id='about'>About us</a>
                     <ul>
                         <li><a href='#history'>Wild Circus History</a></li>
                         <li><a href='#artists'>Artists</a></li>
                     </ul>
                 </li>
 
-                <li><a href='#tour'>Show and tickets</a>
+                <li><a href='#tour' id='s_t'>Show and tickets</a>
                     <ul>
                         <li><a href='#tour'>Get Tickets</a></li>
                         <li><a href='#characters'>The Characters</a></li>
@@ -72,6 +72,7 @@
         <!--image de fond-->
         <div id='header_img'>
             <img src='http://i.imgur.com/GY4o0s8.jpg' id='lion' alt='Meet the human pimitive side' />
+			<img src='http://i.imgur.com/aEo85HX.jpg' id='resp_lion' alt='Meet the human pimitive side'>
         </div>
     
     </header>
@@ -116,12 +117,12 @@
         </section>    
     
     
-        <section id='show'>
+        <section class='show'>
 
-            <h4>
+            <h5>
                 Enter the empire of KARUVAM! An epic adventure of love and conflict where natural elements are raging.
 
-            </h4>
+            </h5>
 
 
             <p>
@@ -130,9 +131,9 @@
             </p>
             
             <article id='story'>
-                <h3>
+                <h2>
                     THE CENTRAL CHARACTERS
-                </h3>
+                </h2>
                 
                 <div id='characters'>
                     
@@ -200,7 +201,7 @@
             </article>
         </section>
         
-        <section id='perf'>
+        <section class='perf'>
 
 <!--Performances-->
             <article id='slide_show'>
@@ -254,7 +255,7 @@
             </article>
         </section>
         
-        <section id='who'>
+        <section class='who'>
             <h2>
                 WHO ARE WE ?
             </h2>
@@ -266,7 +267,7 @@
                 </h3>
                 
                 <div>
-                    <button id='develop'>
+                    <button class='develop'>
                         How to define us
                     </button>
                         <p id='quote'>
@@ -277,7 +278,7 @@
                         </small>
                     </p>
                     
-					<p>
+					<p id='video'>
                         
 <!--Voir pour mettre la vidéo en image si pas affichée et le mettre en CSS-->
                         
@@ -286,8 +287,8 @@
                         </video>
                     </p>
 					
-                     <button id='develop'>
-                        The birth of Wild team
+                     <button class='develop'>
+                        The Wild team birth
 					</button>
                     
                     <p>
@@ -297,7 +298,7 @@
                         After sharing some of their knowledges and ideas with the Blackpool Tower company, Wild Circus troup decided to create its own first show. M. Dungleberg still charmed by the beauty of the mystical performances executed by Wild Circus, decided he would fund this first show "Magical Chikera". And that's how the story begun.
                     </p>
                     
-                     <button id='develop'>
+                     <button class='develop'>
                         To be continued... With you
 					</button>
                     
@@ -314,7 +315,7 @@
                         THE ARTISTS
                     </h3>
                     
-                    <button id='develop'>
+                    <button class='develop'>
 						Paticha Erivols
 						<img src='http://i.imgur.com/tsidIb6.jpg' alt='Paticha Erivols'>
                     </button>
@@ -327,7 +328,7 @@
                         After 5 years in the team, she became one of the main characters in KARUVAM.
                     </p>
                     
-                    <button id='develop'>
+                    <button class='develop'>
                         Miro Menasse
 						<img src='http://i.imgur.com/lAjPQdB.jpg' alt='Miro Menasse'>
                     </button>
@@ -339,7 +340,7 @@
                         After six more years practicing fire-breathing, Miro decided to improve his acts by adding fire in them.
                     </p>
                     
-                    <button id='develop'>
+                    <button class='develop'>
                         Paulo Pendaror
 						<img src="http://i.imgur.com/act4fjX.jpg" alt='Paulo Pendaror'>
                     </button>
@@ -349,9 +350,9 @@
                         Lately, Paulo and Marcus created a show involving lassos on fire. The Company enjoyed it and decided to add their performance to the new show Karuvam.
                     </p>
                     
-                    <button id='develop'>
+                    <button class='develop'>
                         Andy Mac Nigall
-						<img src="https://img0.etsystatic.com/013/1/7361422/il_170x135.422818328_36we.jpg" alt='Andy Mac Nigall'>
+						<img class='andy' src="https://img0.etsystatic.com/013/1/7361422/il_170x135.422818328_36we.jpg" alt='Andy Mac Nigall'>
                     </button>
                     
                     <p>
@@ -382,7 +383,7 @@
                         Whatever the nature of your group (students, corporate, senior, family), Wild Circus helps you plan your dream event.*
                     </p>
                     
-                    <ul>
+                    <ul id='option'>
                         <li>
                             Group pricing
                         </li> 
@@ -402,15 +403,15 @@
                 <div class="group_contact">
                     
                     <h3>
-                        LET'S PLAN YOUR EVENT TOGETHER:
+                        CONTACT US TO PLAN YOUR EVENT TOGETHER:
                     </h3>
                     
                     <ul>
                         <li id='tel'>
-                            +331 65 24 51 25
+                            Call us: +331 65 24 51 25
                         </li>
-                        <li> 
-                            <a href='mailto:info.group@wildcircus.uk'>info.group@wildcircus.uk</a>
+                        <li>  
+                            <a href='mailto:info.group@wildcircus.uk'>Click here to E-mail us</a>
                         </li>
                     </ul>
                     
@@ -433,7 +434,7 @@
         </div>
         
         <div>
-            <a href="#">Newsletter</a><a href='#' class='button_submit'>SUBSCRIBE</a>
+            <a href='#' class='button_submit' title='Click here to see the last Newsletter'>NEWSLETTER</a>
         </div>
         
     </footer>
