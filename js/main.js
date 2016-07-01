@@ -48,18 +48,4 @@ $(document).ready(function() {
 	});	
 });
 
-
 //$(document).ready(function() { $('.descritpion').click function () { $(this).slideUp('slow', function() { }); }); });
-
-
-
-
-//Essai remove text History
-
-$(document).ready(function() {
-	$('.remove').click(function() {
-		$('.disappear').slideToggle('slow', function() {
-			
-		});
-	});	
-});

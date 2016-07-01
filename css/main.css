@@ -111,11 +111,6 @@ h2:hover, h3:hover, #develop:hover {
 	color: rgb(220,20,60);
 }
 
-button:hover {
-	color: limegreen;
-}
-
-
 
 
 /*--------------------------------------------------------------------------*/
@@ -440,9 +435,6 @@ border-bottom: 3px solid white;
 	border: 5px solid white;
 }
 
-#artists ul {
-	list-style: none;
-}
 /*
 .andy { 
 max-height: 123px;
