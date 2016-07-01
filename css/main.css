@@ -84,20 +84,6 @@ div {
 	display: none;
 }
 
-.develop {
-	display: flex;
-	flex-direction: column;
-	margin-top: 30px;
-	font-size: 38px;
-    margin-bottom: -5px;
-	background: none;
-	color: white;
-	text-decoration: underline;
-	font-family:'Agency Fb','Arial';
-	font-weight: bold;
-	border: none;
-}
-
 .develop img {
 	margin-top: 30px;
 }
@@ -125,7 +111,7 @@ h2:hover, h3:hover, #develop:hover {
 	color: rgb(220,20,60);
 }
 
-.develop:hover {
+button:hover {
 	color: limegreen;
 }
 
@@ -592,6 +578,19 @@ footer div a:hover {
 	color: white;
 }
 
+button {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	font-size: 38px;
+    margin-bottom: -5px;
+	background: none;
+	color: white;
+	text-decoration: underline;
+	font-family:'Agency Fb','Arial';
+	font-weight: bold;
+	border: none;
+}
 
 .button_book, .button_submit {
     background-color: rgba(220,20,60,.7);
