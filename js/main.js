@@ -18,14 +18,27 @@ $(window).scroll(function() {
 		$('#returnOnTop').fadeIn();
 });
 
+
+
+
+
 // Essai slide performances
 
 $(document).ready( function() {
 
 });
-		
 
-//Essai slideDown Texte Artists
+
+//Essai Slide texte description personnage
+
+$(document).ready( function() {
+
+});
+
+
+
+
+//Essai slideToggle Texte Artists
 
 $(document).ready(function() {
 	$('.develop').click(function() {
@@ -35,7 +48,10 @@ $(document).ready(function() {
 	});	
 });
 
+
 //$(document).ready(function() { $('.descritpion').click function () { $(this).slideUp('slow', function() { }); }); });
+
+
 
 
 //Essai remove text History
