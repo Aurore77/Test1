@@ -20,8 +20,19 @@ $(window).scroll(function() {
 
 // Essai slide performances
 
+$(document).ready( function() {
+
+});
+		
+
+//Essai slideDown Texte Artists
+
 $(document).ready(function() {
-    
+	$('.develop').click(function() {
+		$('.description').slideDown('slow', function() {
+			
+		});
+	});	
 });
 
-
+//$(document).ready(function() { $('.descritpion').click function () { $(this).slideUp('slow', function() { }); }); });
