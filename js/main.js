@@ -19,16 +19,13 @@ $(window).scroll(function() {
 });
 
 
-
-
 //Essai slideToggle Texte Artists
 
 $(document).ready(function() {
 	$('.develop').click(function() {
 		$('.description').hide();
 		var artist= $(this).data('artist');
-		$('.description[data-artist="' + artist+ '"]').slideToggle('fast', function() {
-		
+		$('.description[data-artist="' + artist+ '"]').slideToggle('fast', function() {		
 		});			
 	});	
 });

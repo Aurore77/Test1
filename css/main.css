@@ -117,9 +117,6 @@ h2:hover {
 /*--------------------------------------------------------------------------*/
 
 #all_header {
-/*    display: flex;*/
-/*	position: relative;*/
-/*    flex-wrap: nowrap;*/
     justify-content: center;
     align-items: center;
 	left: 0;
@@ -127,8 +124,6 @@ h2:hover {
 }
 
 #header_img {
-/*    position: relative;*/
-/*    margin-top: 60px;*/
 	border-style: none;
 }
 
@@ -139,19 +134,12 @@ h2:hover {
 /*--------------------------------*/
 
 header nav {
-/*    display: flex;*/
-/*    align-self: stretch;*/
     color: white;
     position: fixed;
 	margin: 0;
-    z-index: 2; /*pour passer au desus de tout en position fixed*/
+    z-index: 2; /*pour passer au dessus de tout en position fixed*/
 }
 
-/*
-nav ul {
-	margin-left: 0;
-}
-*/
 
 
 /*--------------------------------*/
@@ -159,7 +147,6 @@ nav ul {
 /*--------------------------------*/
 
 #menu, #menu ul {
-/*    display: inline;*/
     list-style: none;
     padding: 0;
     margin: 0;
@@ -167,7 +154,6 @@ nav ul {
     line-height: 60px;
     text-align: center;
     font-weight: bold;
-/*    white-space: nowrap;*/
 }
 
 #menu {
@@ -265,10 +251,8 @@ html<body #menu li ul li {
 }
 
 #tour li {
-/*    display: none;*/
 	list-style: none;
     line-height: 40px;
-/*    white-space: nowrap;*/
 }
 
 #tour h3 {
@@ -287,69 +271,46 @@ html<body #menu li ul li {
 	padding-top: 20px;
 }
 
-.show h4 {
-/*	padding-top: -80px;*/
-
-}
-
 .eachCharacter p {
 	font-size: 30px;
+}
+
+#characters h3 {
+	margin-bottom: 30px;
 }
 
 .show ul {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-/*
-	justify-content: space-around;
-	align-content: space-around;
-	align-items: center;
-	align-self: center;
-*/
+	word-wrap: break-word;
 	list-style: none;
-	margin-top: 30px;
-/*	margin-bottom: 0;*/
 	padding: 0;
-	background-color: rgba(220,20,60,.2);
-	border-radius: 20px; 
-	text-align: justify;	
+	text-align: justify;
+	background-color: none;
 }
 
 .show li {	
 	width: 50%;
-/*	height: 330px;*/
 	padding: 0px 20px 0px 20px;
-/*	border-left: 1px solid white;*/
-/*	padding-top: -20px;*/
-}
-
-/*
-#gevurak {
- 	position: relative;
-	float: left;
+	background-color: rgba(220,20,60,.2);
+	border-radius: 20px; 
 }
 
 #fritran {
-	position: relative;
-	float: right;
-}
-
-#melindra {
-	float:left;
-	margin-top: 330px;
-	margin-left: -1145px;
+	margin-left: 25px;
 }
 
 #bellimon {
-	float: right;
-	margin-top: 330px;
+	margin-left: 25px;
 }
-*/
+
 
 .show li:hover {
 	background-color: rgba(220,20,60,.5);
 	border-radius: 20px;
 	border-left: 10px solid white;
+	width: 80%;
 }
 
 
@@ -537,16 +498,6 @@ max-height: 123px;
 	float: right;
 }
 
-/*
-.group {
-display: inline-flex;
-    text-align: center;    
-}
-
-.group h3, .group h4, .group div {
-     padding-left: 35px;
-}
-*/
 
 
 /*--------------------------------*/
@@ -557,17 +508,8 @@ display: inline-flex;
 	border-style: none;
 }
 
-#invite {
-/*	text-align: center;*/
-}
-
 #option li {
 	display: inline-flex;
-/*	flex-direction: column;*/
-/*	align-items: center;*/
-/*	align-content: space-between;*/
-/*	align-self: center;*/
-/*	text-align: center;*/
 	margin: 0px 40px 0px 40px;
 }
 
@@ -653,18 +595,19 @@ button:hover {
 /*--------------------------------*/
 
 #returnOnTop {
-    background: url('http://i.imgur.com/kXoV5LG.jpg') no-repeat;
-    bottom: 2%;
+    background: url('http://i.imgur.com/w9tpj8f.png') no-repeat;
+    bottom: 3%;
     cursor: pointer;
     display: none;
     filter: alpha(opacity = 50); /* IE < 8 */
-    height: 60px;
+    height: 100px;
     opacity: 0.5;
     position: fixed;
     right: 3%;
-    width: 150px;
+    width: 100px;
 	border-style: none;
 	padding: 0;
+
 }
 
 #returnOnTop:hover {
@@ -683,37 +626,14 @@ button:hover {
 
 
 @media only screen and (max-width: 1130px) {
-/*
-	.icon {
-		position: relative;
-		float: left;
-		display: block;
-		height: 110px;
-		width: 120px;
-		
-		background-image: url('http://i.imgur.com/4WXJ61k.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-
-		margin-left: -120px;
-		margin-top: 200px;
-		
-		
-		&:after{
-			content: '';
-			position: absolute;
-			display: block;
-			width: 25px;
-			box-shadow: 0 10px 0 1px #FFF, 0 16px 1px #FFF, 0 22px 1px #FFF;
-		}
-	}
-*/
 
 	header {
 		position: static;
 	}
 	
+
 	#lion {
+	
 		display: none;
 	}
 	
@@ -739,8 +659,6 @@ button:hover {
 		font-size: 2rem;
 		bottom: 0;
 		top: 0;
-		
-/*		width: 220px;*/
 	}
 	
 	#menu li ul li {
@@ -764,7 +682,6 @@ button:hover {
 	
 	h3 {
 		font-size: 30px;
-	
 	}
 	
 	h4 {
@@ -803,16 +720,12 @@ button:hover {
 	list-style: none;
 	margin-top: 30px;
 	padding: 0;
-	background-color: rgba(220,20,60,.2);
 	border-radius: 20px; 
 	text-align: left;	
 }
     .show li {	
 	width: 50%;
-/*	height: 330px;*/
 	padding: 0px 10px 0px 10px;
-/*	border-left: 1px solid white;*/
-/*	padding-top: -20px;*/
 }
     
     footer div a {
@@ -822,3 +735,8 @@ button:hover {
     .button_subscribe {
        margin-left: 110px;
     }
+	
+	#fly {
+		width: 99%;
+	}
+}
