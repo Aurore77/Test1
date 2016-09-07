@@ -2,4 +2,4 @@
 
 Welcome page of repository
 
-add text
+Projet piscine pour entrer à la WCS
